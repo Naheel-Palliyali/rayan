@@ -217,9 +217,11 @@
             }
 
             function saveData() {
+                console.log("dog")
                 setTimeout(initAirtable, 3000);
             }
 
+            submitButton.addEventListener("touchend", saveData)
             submitButton.addEventListener("click", saveData)
         }
 
